@@ -1,6 +1,8 @@
 class IoC:
     """
     Inversion of Control class
+    # NO container
+    # NO dependency injection
     """
 
     def __init__(self) -> None:

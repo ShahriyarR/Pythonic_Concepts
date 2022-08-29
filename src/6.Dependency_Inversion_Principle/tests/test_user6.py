@@ -11,6 +11,7 @@ def test_user_add_mysql():
 
     user = User(database=database)
     assert user.add("data") == "MySQL has persisted: data"
+    database.persist.assert_called()
 
 
 def test_user_add_pg():
@@ -20,3 +21,4 @@ def test_user_add_pg():
 
     user = User(database=database)
     assert user.add("data") == "PG has persisted: data"
+    database.persist.assert_called()

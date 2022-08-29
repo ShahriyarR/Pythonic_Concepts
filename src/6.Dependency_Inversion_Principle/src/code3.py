@@ -3,7 +3,7 @@ from typing import Optional
 
 class DIP:
     """
-    Inversion of Control class
+    Dependency Inversion Principle
     """
 
     def __init__(self) -> None:

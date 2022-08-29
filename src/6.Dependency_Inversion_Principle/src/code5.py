@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class MySQLDatabase:
     """
     MySQL database implementation class
@@ -22,7 +23,7 @@ class MySQLDatabase:
 
 class PGDatabase:
     """
-    MySQL database implementation class
+    Postgres database implementation class
     """
 
     # Imagine that here we have some kind of openning the actual real database connection
