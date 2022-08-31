@@ -28,6 +28,7 @@ def _get_img_converted_to_rgb_or_rgba(src_img: Image.Image) -> Image.Image:
 
     _map = defaultdict(lambda: lambda: src_img.convert("RGB"))
     _map["PNG"] = lambda: src_img.convert("RGBA")
+    _map["GIF"] = lambda: src_img
     return _map[src_img.format]()
 
 
@@ -43,9 +44,6 @@ def __fetch_image(
     elif isinstance(src_img, Image.Image) and (
         gif_allowed or not __isgif(src_img)
     ):
-        if src_img.format == "GIF":
-            # Do not convert GIF file
-            return src_img
         
         return _get_img_converted_to_rgb_or_rgba(src_img=src_img)
 
