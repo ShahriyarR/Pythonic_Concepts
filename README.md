@@ -10,3 +10,7 @@ Code: ![path](./src/6.Dependency_Inversion_Principle/)
 7. Video: [Cyclomatic Complexity](https://www.youtube.com/watch?v=KDIOrf42gZ0)
 
 Code: ![path](./src/7.Cyclomatic_Complexity)
+
+8. Video: [Django hot-reload](https://www.youtube.com/watch?v=0zUcxkqWMh8)
+
+Code: ![path](./src/8.Reloadium_django_hot_reload)
